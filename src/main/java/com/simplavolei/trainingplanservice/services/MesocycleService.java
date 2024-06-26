@@ -1,8 +1,6 @@
 package com.simplavolei.trainingplanservice.services;
 
-
 import com.simplavolei.trainingplanservice.models.Mesocycle;
-
 import com.simplavolei.trainingplanservice.repositories.MesocycleRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -66,6 +64,10 @@ public class MesocycleService {
             existingMesocycle.setDescription(updatedMesocycle.getDescription());
             existingMesocycle.setState(updatedMesocycle.getState());
             existingMesocycle.setType(updatedMesocycle.getType());
+            existingMesocycle.setObjetivosEspecificos(updatedMesocycle.getObjetivosEspecificos());
+            existingMesocycle.setObjetivosGenerales(updatedMesocycle.getObjetivosGenerales());
+            existingMesocycle.setPeriodoDeEntrenamiento(updatedMesocycle.getPeriodoDeEntrenamiento());
+            
             
 
             // Guardar el mesociclo actualizado

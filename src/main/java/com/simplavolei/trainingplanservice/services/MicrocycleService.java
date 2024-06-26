@@ -47,6 +47,9 @@ public class MicrocycleService {
             existingMicrocycle.setName(updatedMicrocycle.getName());
             existingMicrocycle.setDescription(updatedMicrocycle.getDescription());
             existingMicrocycle.setState(updatedMicrocycle.getState());
+            existingMicrocycle.setCantidadDeRepeticiones(updatedMicrocycle.getCantidadDeRepeticiones());
+            existingMicrocycle.setCantidadDeSeries(updatedMicrocycle.getCantidadDeSeries());
+            existingMicrocycle.setTiempoDeDescanso(updatedMicrocycle.getTiempoDeDescanso());
             // Add additional updates as needed
             return microcycleRepository.save(existingMicrocycle);
         } else {

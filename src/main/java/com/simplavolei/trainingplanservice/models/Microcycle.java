@@ -14,6 +14,10 @@ public class Microcycle {
 
     private String name;
     private String description;
+    
+    private int cantidadDeSeries; // Nuevo campo para la cantidad de series
+    private int cantidadDeRepeticiones; // Nuevo campo para la cantidad de repeticiones
+    private int tiempoDeDescanso; // Nuevo campo para el tiempo de descanso en segundos
 
     @Enumerated(EnumType.STRING)
     private MicrocycleState state;

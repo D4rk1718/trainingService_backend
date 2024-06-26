@@ -5,6 +5,7 @@ import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +20,9 @@ public class TrainingPlan {
     private String name;
 
     private String description;
+    private LocalDate fechaInicio; // Nuevo campo para la fecha de inicio
+    
+    private LocalDate fechaFin; // Nuevo campo para la fecha de fin
 
     @OneToMany(mappedBy = "trainingPlan", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JsonIgnore

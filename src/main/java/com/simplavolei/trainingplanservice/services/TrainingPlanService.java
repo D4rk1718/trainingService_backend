@@ -51,6 +51,8 @@ public class TrainingPlanService {
             TrainingPlan existingTrainingPlan = optionalTrainingPlan.get();
             existingTrainingPlan.setName(updatedTrainingPlan.getName());
             existingTrainingPlan.setDescription(updatedTrainingPlan.getDescription());
+            existingTrainingPlan.setFechaInicio(updatedTrainingPlan.getFechaInicio());
+            existingTrainingPlan.setFechaFin(updatedTrainingPlan.getFechaFin());
 
             // Limpiar mesociclos existentes y actualizar con nuevos mesociclos
             existingTrainingPlan.getMesocycles().clear();
